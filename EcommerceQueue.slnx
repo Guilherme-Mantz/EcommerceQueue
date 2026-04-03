@@ -1,0 +1,37 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/Messaging/Messaging.csproj" Id="de376a1e-89e8-4585-beea-3fbc36cb3fc0" />
+    <Project Path="src/BuildingBlocks/Observability/Observability.csproj" Id="c0dad0f0-ddf7-4863-bc28-a80d5013c2ff" />
+  </Folder>
+  <Folder Name="/src/BuildingBlocks/Common/" />
+  <Folder Name="/src/Contracts/">
+    <Project Path="src/Contracts/Events/Events.csproj" Id="c3fca0b1-231a-4375-b521-9d0c75b40bd1" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Notification/" />
+  <Folder Name="/src/Services/Orders/">
+    <Project Path="src/Services/Orders/Application/Application.csproj" Id="a7ed2f88-179f-4e50-9e9e-72a2364ae793" />
+    <Project Path="src/Services/Orders/Domain/Domain.csproj" Id="64022bbb-e165-43b0-a3cf-0bb0f374d3f7" />
+    <Project Path="src/Services/Orders/Infrastructure/Infrastructure.csproj" Id="95eed944-bda6-444c-b53e-d7dfa4116abd" />
+    <Project Path="src/Services/Orders/Orders.API/Orders.API.csproj" />
+    <Project Path="src/Services/Orders/ServiceDefaults/ServiceDefaults.csproj" Id="bf71ec52-bf60-4e54-be9c-2cf33a037690" />
+    <Project Path="src/Services/Orders/Shared/Shared.csproj" Id="5935c786-bdb5-487b-b313-60cbff02d523" />
+  </Folder>
+  <Folder Name="/src/Services/Payment/">
+    <Project Path="src/Services/Payment/Application/Application.csproj" Id="eb2b3955-9512-406d-b5d8-f4d3c5929114" />
+    <Project Path="src/Services/Payment/Domain/Domain.csproj" Id="ea23aabb-db8a-474a-9f9d-7ecd5e74a78f" />
+    <Project Path="src/Services/Payment/Infrastructure/Infrastructure.csproj" Id="dfe89a79-40c6-4267-8011-7dd2fe59d2d8" />
+    <Project Path="src/Services/Payment/Payment.API/Payment.API.csproj" Id="2d68e987-e5d7-4231-9564-7bcdc532ac4f" />
+    <Project Path="src/Services/Payment/ServiceDefaults/ServiceDefaults.csproj" Id="b93e59d5-f0c6-4c35-95ac-6a4a5ac9f830" />
+    <Project Path="src/Services/Payment/Shared/Shared.csproj" Id="65d2e7be-1238-456e-afa3-ba70cd8d4f84" />
+  </Folder>
+  <Folder Name="/src/Services/Stock/">
+    <Project Path="src/Services/Stock/Application/Application.csproj" Id="5cfefe05-6df2-4fbc-a17f-518221027d82" />
+    <Project Path="src/Services/Stock/Domain/Domain.csproj" Id="38ca6f3f-b027-4d5b-91f1-b21c4b75f9fe" />
+    <Project Path="src/Services/Stock/Infrastructure/Infrastructure.csproj" Id="bc87b8cf-195a-4225-a7b7-085d86d2b36a" />
+    <Project Path="src/Services/Stock/ServiceDefaults/ServiceDefaults.csproj" Id="fc568391-d04d-4108-98be-057d37a3f5c5" />
+    <Project Path="src/Services/Stock/Shared/Shared.csproj" Id="5c006cee-9435-4252-9bd7-c0fb58aebede" />
+    <Project Path="src/Services/Stock/Sotck.API/Sotck.API.csproj" Id="7761be59-dcf0-4d04-9302-45fdac7e913d" />
+  </Folder>
+</Solution>

@@ -1,0 +1,6 @@
+@Sotck.API_HostAddress = http://localhost:5103
+
+GET {{Sotck.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
