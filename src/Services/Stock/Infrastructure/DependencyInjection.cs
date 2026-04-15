@@ -1,12 +1,15 @@
-﻿using Stock.Application.Common.Interfaces;
+using Stock.Application.Common.Interfaces;
 using Stock.Infrastructure.Data;
 using Stock.Infrastructure.Data.Interceptors;
 using Stock.Infrastructure.Identity;
+using Stock.Infrastructure.Messaging;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using Messaging;
+using Observability;
 
 namespace Microsoft.Extensions.DependencyInjection;
 
@@ -19,6 +22,15 @@ public static class DependencyInjection
 
         builder.Services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
         builder.Services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
+
+        builder.Services.AddCustomObservability("Stock.API");
+
+        builder.Services.AddCustomMassTransit(builder.Configuration, x =>
+        {
+            x.AddConsumer<PaymentProcessedConsumer>();
+        });
+
+        builder.Services.AddMemoryCache();
 
         builder.Services.AddDbContext<ApplicationDbContext>((sp, options) =>
         {
