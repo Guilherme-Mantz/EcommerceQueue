@@ -15,8 +15,8 @@ public static class InitialiserExtensions
 
         var initialiser = scope.ServiceProvider.GetRequiredService<ApplicationDbContextInitialiser>();
 
-        await initialiser.InitialiseAsync();
-        await initialiser.SeedAsync();
+        //await initialiser.InitialiseAsync();
+        //await initialiser.SeedAsync();
     }
 }
 
@@ -35,7 +35,6 @@ public class ApplicationDbContextInitialiser(
     {
         try
         {
-            await _context.Database.EnsureDeletedAsync();
             await _context.Database.EnsureCreatedAsync();
         }
         catch (Exception ex)
